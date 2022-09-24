@@ -2,8 +2,19 @@
 //  Copyright (c) 2015 Cédric Luthi. All rights reserved.
 //
 
+#if __has_include(<CocoaLumberjack/CocoaLumberjack.h>)
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#else
+// Imported via SPM.
+@import CocoaLumberjack;
+#endif
+
+#if __has_include(<NSLogger/LoggerClient.h>)
 #import <NSLogger/LoggerClient.h>
+#else
+// Imported via SPM.
+#import "LoggerClient.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
