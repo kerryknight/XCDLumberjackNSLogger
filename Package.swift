@@ -41,7 +41,6 @@ let package = Package(
                 "Cartfile",
                 "Cartfile.resolved"
             ],
-            sources: ["XCDLumberjackNSLogger/XCDLumberjackNSLogger.m"],
             publicHeadersPath: "XCDLumberjackNSLogger"
         )
     ]
